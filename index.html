@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Naveen Harinda's portfolio of software projects, systems research, and writing.">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>Naveen Harinda — Portfolio</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/project-filter.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell site-bar">
+      <a class="wordmark" href="#top">
+        <span class="monogram" aria-hidden="true">N<span>_</span></span>
+        <span>imnot-naveen</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="blogs/">Blogs</a>
+      </nav>
+      <a class="header-link github-link" href="https://github.com/imnot-naveen"><span class="github-icon" aria-hidden="true"></span> GitHub</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="intro-heading">
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow hero-intro"><span aria-hidden="true"></span>Hello, world.</p>
+          <div class="hero-identity">
+            <h1 id="intro-heading">Naveen<br>Harinda<span class="title-period">.</span></h1>
+            <img class="hero-portrait" src="assets/naveen-harinda.jpg" width="505" height="793" alt="Portrait of Naveen Harinda">
+          </div>
+          <p class="lede">I’m a computer science undergraduate in Colombo. I build web apps and search tools, and I like figuring out what happens under the hood.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="button" href="mailto:naveenharinda2@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <aside class="profile" aria-label="At a glance">
+          <div class="profile-bar">
+            <span>PROFILE.TXT</span>
+            <span class="profile-cursor" aria-hidden="true"></span>
+          </div>
+          <dl>
+            <div>
+              <dt>Based in</dt>
+              <dd>Colombo, Sri Lanka</dd>
+            </div>
+            <div>
+              <dt>Studying</dt>
+              <dd>Computer Science at UCSC</dd>
+            </div>
+            <div>
+              <dt>Previously</dt>
+              <dd>Software engineering intern at LSEG</dd>
+            </div>
+          </dl>
+          <a href="https://www.linkedin.com/in/naveenharinda/">Find me on LinkedIn <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="work shell" id="projects" aria-labelledby="work-heading">
+      <div class="section-heading work-heading" id="work">
+        <h2 id="work-heading">Projects</h2>
+        <div class="filters" role="group" aria-label="Filter projects" data-project-filters hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="systems" aria-pressed="false">Systems</button>
+          <button type="button" data-filter="ai" aria-pressed="false">AI</button>
+          <button type="button" data-filter="search" aria-pressed="false">Search</button>
+          <button type="button" data-filter="web" aria-pressed="false">Web</button>
+        </div>
+        <p class="sr-only" role="status" data-filter-status></p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project project-lead" data-category="web">
+          <p class="eyebrow card-label">Web · Healthcare</p>
+          <div class="project-title">
+            <h3>Drops of Hope</h3>
+            <span class="project-status status-completed">Completed</span>
+          </div>
+          <p>A blood donation and inventory management system that connects donors, recipients, and blood banks, with appointment management and demand forecasting.</p>
+          <ul class="tags" aria-label="Technologies"><li>Next.js</li><li>Node.js</li><li>Express</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Asgardeo</li><li>Supabase</li></ul>
+          <div class="project-links">
+            <a class="project-link github-link" href="https://github.com/Drops-of-Hope" aria-label="Drops of Hope on GitHub"><span class="github-icon" aria-hidden="true"></span> View source</a>
+            <a class="project-link" href="projects/blood-donation.html">Read more <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project" data-category="systems">
+          <p class="eyebrow card-label">Final-year project · Research</p>
+          <div class="project-title">
+            <h3>Cloud-native fault tolerance</h3>
+            <span class="project-status status-progress">In Progress</span>
+          </div>
+          <p>Exploring how Kubernetes-based microservices can recover faster after failures, and how to measure that recovery from the user’s side.</p>
+          <ul class="tags" aria-label="Technologies and topics"><li>Kubernetes</li><li>Observability</li><li>Recovery time</li></ul>
+          <a class="project-link" href="projects/cloud-native-fault-tolerance.html">Read more <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="project" data-category="search">
+          <p class="eyebrow card-label">Search · PlayStation Vita</p>
+          <div class="project-title">
+            <h3>Vita Vault</h3>
+            <span class="project-status status-progress">In Progress</span>
+          </div>
+          <p>A troubleshooting knowledge base for the PlayStation Vita that retrieves relevant passages and links to their original sources.</p>
+          <ul class="tags" aria-label="Technologies"><li>Python</li><li>Qdrant</li><li>FastAPI</li></ul>
+          <div class="project-links">
+            <a class="project-link github-link" href="https://github.com/imnot-naveen/vita-vault" aria-label="Vita Vault on GitHub"><span class="github-icon" aria-hidden="true"></span> View source</a>
+            <a class="project-link" href="projects/vita-vault.html">Read more <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project" data-category="search web">
+          <p class="eyebrow card-label">Search · Hiking</p>
+          <div class="project-title">
+            <h3>Lanka Trails</h3>
+            <span class="project-status status-completed">Completed</span>
+          </div>
+          <p>Ask about Sri Lankan hikes in plain language or upload a photo to look up a location. Search combines structured trail data with text and image embeddings.</p>
+          <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>React</li><li>ChromaDB</li></ul>
+          <div class="project-links">
+            <a class="project-link github-link" href="https://github.com/imnot-naveen/Lanka-Trail" aria-label="Lanka Trails on GitHub"><span class="github-icon" aria-hidden="true"></span> View source</a>
+            <a class="project-link" href="projects/lanka-trails.html">Read more <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project" data-category="web">
+          <p class="eyebrow card-label">Web · Prototype</p>
+          <div class="project-title">
+            <h3>Rebuild</h3>
+            <span class="project-status status-progress">In Progress</span>
+          </div>
+          <p>A relief coordination prototype designed around requests, supplies, and deliveries. Its current foundation includes a NestJS API, a React app, and PostGIS.</p>
+          <ul class="tags" aria-label="Technologies"><li>NestJS</li><li>React</li><li>PostGIS</li></ul>
+          <div class="project-links">
+            <a class="project-link github-link" href="https://github.com/imnot-naveen/rebuild" aria-label="Rebuild on GitHub"><span class="github-icon" aria-hidden="true"></span> View source</a>
+            <a class="project-link" href="projects/rebuild.html">Read more <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project" data-category="ai systems">
+          <p class="eyebrow card-label">Developer tools · In design</p>
+          <div class="project-title">
+            <h3>TARS - Triage</h3>
+            <span class="project-status status-progress">In Progress</span>
+          </div>
+          <p>A multi-agent pipeline for investigating failed GitHub Actions jobs. The design brings together CI logs, pull request diffs, and configuration evidence to identify a likely cause.</p>
+          <dl class="project-details">
+            <div><dt>Role</dt><dd>Solo Developer (System Architecture, Python Development, and Multi-Agent Orchestration)</dd></div>
+            <div><dt>Tech Stack</dt><dd>Python, asyncio, OpenRouter, HTTPX, Pydantic, GitHub REST API, and pytest</dd></div>
+          </dl>
+          <a class="project-link" href="projects/tars-triage.html">Read more <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="project" data-category="web">
+          <p class="eyebrow card-label">Web · University group project</p>
+          <div class="project-title">
+            <h3>Traventure</h3>
+            <span class="project-status status-completed">Completed</span>
+          </div>
+          <p>A travel web app built with my group during our second year at the University of Colombo School of Computing.</p>
+          <ul class="tags" aria-label="Technologies"><li>PHP</li><li>JavaScript</li></ul>
+          <div class="project-links">
+            <a class="project-link github-link" href="https://github.com/imnot-naveen/Traventure" aria-label="Traventure on GitHub"><span class="github-icon" aria-hidden="true"></span> View source</a>
+            <a class="project-link" href="projects/traventure.html">Read more <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="journal shell">
+      <section id="timeline" aria-labelledby="timeline-heading">
+        <div class="section-heading"><h2 id="timeline-heading">Timeline</h2></div>
+        <ol class="timeline">
+          <li class="timeline-entry timeline-milestone timeline-current">
+            <span class="timeline-date">Present</span>
+            <div class="timeline-content">
+              <h3>Final year</h3>
+              <p>Completing my computer science degree and researching fault tolerance in cloud-native systems.</p>
+            </div>
+          </li>
+          <li class="timeline-entry">
+            <time class="timeline-date" datetime="2026">2026</time>
+            <div class="timeline-content"><h3><a href="blogs/drops-of-hope-nbqsa-2026/">Drops of Hope wins a merit award at National ICT Awards – NBQSA 2026</a></h3></div>
+          </li>
+          <li class="timeline-entry">
+            <time class="timeline-date" datetime="2026-05-22">22 May 2026</time>
+            <div class="timeline-content"><h3><a href="blogs/about-my-internship/">About my Internship</a></h3></div>
+          </li>
+          <li class="timeline-entry timeline-milestone">
+            <time class="timeline-date" datetime="2026-05">May 2026</time>
+            <div class="timeline-content">
+              <h3>Finished my internship</h3>
+              <p>Completed six months as a software engineering intern at LSEG.</p>
+            </div>
+          </li>
+          <li class="timeline-entry">
+            <time class="timeline-date" datetime="2026-04-09">9 Apr 2026</time>
+            <div class="timeline-content"><h3><a href="blogs/intern-hackathon/">We won the intern hackathon!</a></h3></div>
+          </li>
+          <li class="timeline-entry timeline-milestone">
+            <time class="timeline-date" datetime="2025-11">Nov 2025</time>
+            <div class="timeline-content">
+              <h3>Started my internship</h3>
+              <p>Joined LSEG as a software engineering intern.</p>
+            </div>
+          </li>
+          <li class="timeline-entry">
+            <time class="timeline-date" datetime="2025-10-25">25 Oct 2025</time>
+            <div class="timeline-content"><h3><a href="blogs/ieeextreme-19/">IEEEXtreme 19.0 – What a ride!</a></h3></div>
+          </li>
+          <li class="timeline-entry timeline-milestone">
+            <time class="timeline-date" datetime="2023">2023</time>
+            <div class="timeline-content">
+              <h3>Started university</h3>
+              <p>Began studying computer science at the University of Colombo School of Computing.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="blogs" id="blogs" aria-labelledby="blogs-heading">
+        <div class="section-heading"><h2 id="blogs-heading">Blogs</h2></div>
+        <div class="post-list">
+          <article class="post-preview">
+            <time class="post-date" datetime="2025-11-25">25 Nov 2025</time>
+            <h3><a href="blogs/ieeextreme-19/">IEEEXtreme 19.0 – What a ride!</a></h3>
+            <p>Three years of competitive programming with WeForgetComments, from our first 24-hour hackathon to a global rank of 57.</p>
+          </article>
+          <article class="post-preview">
+            <time class="post-date" datetime="2026-04-09">9 Apr 2026</time>
+            <h3><a href="blogs/intern-hackathon/">We won the intern hackathon!</a></h3>
+            <p>How HackXChange built an analytics tool and won the LSEG intern hackathon.</p>
+          </article>
+          <article class="post-preview">
+            <time class="post-date" datetime="2026-05-22">22 May 2026</time>
+            <h3><a href="blogs/about-my-internship/">About my Internship</a></h3>
+            <p>Six months at LSEG, from getting to know my team to writing a tool that reconstructs order book snapshots.</p>
+          </article>
+        </div>
+        <a class="project-link" href="blogs/">View all posts <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="shell about-layout">
+        <h2 id="about-heading">About me</h2>
+        <div>
+          <p>I’m drawn to backend and infrastructure work where the details matter. My projects take me from building search tools in Python to working with sockets in C. For my final-year research, I’m looking at what it takes to bring a service back after it fails.</p>
+          <ul class="tags about-tags" aria-label="Interests">
+            <li>Distributed systems</li><li>Backend engineering</li><li>Information retrieval</li><li>Open source</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-main">
+        <h2>Get in touch<span class="title-period">.</span></h2>
+        <div class="footer-links">
+          <a href="mailto:naveenharinda2@gmail.com">
+            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+            <span>naveenharinda2@gmail.com</span>
+          </a>
+          <a href="https://github.com/imnot-naveen">
+            <span class="github-icon footer-icon" aria-hidden="true"></span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/naveenharinda/">
+            <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5ZM8 19H5V8h3v11ZM6.5 6.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM20 19h-3v-5.6c0-3.1-3.9-2.9-3.9 0V19h-3V8h3v1.8C14.5 7.3 20 7.1 20 12.4V19Z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>© 2026 Naveen Harinda</span>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
